@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+#small{
+  max-height: 30px;
+  max-width: 30px;
+}
+.img-fluid {
+  max-height: 150px;
+  max-width: 150px;
+
+}
