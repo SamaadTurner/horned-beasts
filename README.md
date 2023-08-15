@@ -1,8 +1,40 @@
-# React + Vite
+# time it took:  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Number and name of feature: Feature #1: Display Images  
 
-Currently, two official plugins are available:
+Estimate of time needed to complete: 30 mins  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Start time:1:40pm   
+
+Finish time:  2:09pm  
+
+Actual time needed to complete:  
+29mins  
+
+
+
+Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
+
+Estimate of time needed to complete: 1 hour
+
+Start time:2:15pm  
+
+Finish time: 2:53pm  
+
+Actual time needed to complete:  
+38mins  
+
+
+
+
+Number and name of feature: Feature #2: Bootstrap
+
+Estimate of time needed to complete: 1 hour
+
+Start time:3pm  
+
+Finish time:   3:23pm  
+
+Actual time needed to complete:  
+23mins
+
