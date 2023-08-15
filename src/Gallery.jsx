@@ -1,5 +1,8 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import Image1 from './images/HornedBeast_1.jpeg';
+import Image2 from './images/HornedBeast_2.jpeg';
+import Image3 from './images/HornedBeast_3.jpeg';
 
 
 class Gallery extends React.Component {
@@ -8,31 +11,31 @@ class Gallery extends React.Component {
           {
             num: 1,
             image_url:
-              '(enter image url here (i havent found one yet)',
-            title: 'enter title of pic',
-            description: 'enter stuff here',
-            keyword: 'enter keyword here',
+              Image1,
+            title: 'RPG HornedBeast',
+            description: 'Got this picture from google',
+            keyword: 'hornedBeast_1',
             horns: 1,
           },
     
           {
             num: 2,
             image_url:
-            '(enter image url here (i havent found one yet)',
-          title: 'enter title of pic',
-          description: 'enter stuff here',
-          keyword: 'enter keyword here',
+            Image2,
+          title: 'Horsed Beast',
+          description: 'white beast',
+          keyword: 'hornedBeast_2',
           horns: 2,
           },
     
           {
             num: 3,
             image_url:
-              '(enter image url here (i havent found one yet)',
-            title: 'enter title of pic',
-            description: 'enter stuff here',
-            keyword: 'enter keyword here',
-            horns: 1,
+              Image3,
+            title: 'Fantasy Horned Beast',
+            description: 'cool mythical beast',
+            keyword: 'hornedBeast_3',
+            horns: 6,
           },
         ];
         return (
