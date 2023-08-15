@@ -1,6 +1,8 @@
 import React from 'react';
 import blackHeart from './images/heart-icon.png';
 import emptyHeart from './images/heart-line-icon.png';
+import Button from 'react-bootstrap/Button';
+
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -22,12 +24,12 @@ class HornedBeast extends React.Component {
     return (
       <div>
         <h2>{this.props.title}</h2>
-        <img src={this.props.image_url} alt={this.props.keyword} title={this.props.title}></img>
+        <img className='img-fluid' src={this.props.image_url} alt={this.props.keyword} title={this.props.title}></img>
         <p>{this.props.description}</p>
-        <button onClick={this.handleClick}>
-          <img src={this.state.isFavorite ? blackHeart : emptyHeart} alt={this.state.isFavorite ? "Black Heart" : "Empty Heart"} />
+        <Button variant="light" onClick={this.handleClick}>
+          <img id="small" className='img-fluid' src={this.state.isFavorite ? blackHeart : emptyHeart} alt={this.state.isFavorite ? "Black Heart" : "Empty Heart"} />
           {this.state.favoriteCounter} Favorites
-        </button>
+        </Button>
       </div>
     );
   }
