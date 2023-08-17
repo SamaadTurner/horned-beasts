@@ -1,6 +1,9 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 import SelectedBeasts from './SelectedBeasts';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 class Gallery extends React.Component {
   constructor() {
@@ -30,9 +33,10 @@ class Gallery extends React.Component {
 
     return (
       <div className='gallery'>
+        <Row xs={1} md={3} lg={4}>
         {hornedBeasts.map((item) => (
+          <Col  key={item._id}>
           <HornedBeast
-            key={item._id}
             item={item}
             openModal={this.openModal}
             title={item.title}
@@ -41,7 +45,9 @@ class Gallery extends React.Component {
             description={item.description}
             onSelect={() => this.props.onBeastSelection(item)}
           />
+          </Col>
         ))}
+        </Row>
         {this.state.showModal && (
           <SelectedBeasts
             showModal={this.state.showModal}
