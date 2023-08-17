@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';import './App.css';
+import Button from 'react-bootstrap/Button';
+import './App.css';
+import Image from 'react-bootstrap/Image';
 
 class SelectedBeast extends React.Component {
   render() {
@@ -16,7 +18,7 @@ class SelectedBeast extends React.Component {
           <Modal.Title>{selectedBeast.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img className='modal_image' src={selectedBeast.image_url} alt={selectedBeast.title} />
+          <Image fluid src={selectedBeast.image_url} alt={selectedBeast.title} />
           <p>{selectedBeast.description}</p>
         </Modal.Body>
         <Modal.Footer>

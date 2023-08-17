@@ -2,19 +2,18 @@ import React from 'react';
 import blackHeart from './images/heart-icon.png';
 import emptyHeart from './images/heart-line-icon.png';
 import Button from 'react-bootstrap/Button';
-
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isFavorite: false,
-      favoriteCounter: 0, // added state to track favorite count
+      favoriteCounter: 0,
     };
   }
 
   handleClick = () => {
-    //this.props.openModal(this.props.item); // maybe move to a seperate button click.
     this.setState((prevState) => ({
       isFavorite: !prevState.isFavorite,
       favoriteCounter: prevState.isFavorite ? prevState.favoriteCounter - 1 : prevState.favoriteCounter + 1,
@@ -22,32 +21,33 @@ class HornedBeast extends React.Component {
   };
 
   render() {
-    const {item, openModal} = this.props;
+    const { item, openModal } = this.props;
+
     return (
-      <div>
-        <h2>{this.title}</h2>
-        <img className='img-fluid' src={this.props.image_url} alt={this.props.keyword} title={this.props.title}></img>
-        <p>{this.props.description}</p>
-        <Button variant='light' onClick={() => openModal(item)}>
-          More Info
-        </Button>
-        <Button variant="light" onClick={this.handleClick}>
-          <img id="small" className='img-fluid' src={this.state.isFavorite ? blackHeart : emptyHeart} alt={this.state.isFavorite ? "Black Heart" : "Empty Heart"} />
-          {this.state.favoriteCounter} Favorites
-        </Button>
-      </div>
+      <Card style={{width: '18rem', backgroundColor: '#710c04', color: 'white'}}>
+        <Card.Body>
+          <Card.Title>{item.title}</Card.Title>
+          <Card.Img src={item.image_url} alt={item.keyword} title={item.title} />
+          <Card.Text>{item.description}</Card.Text>
+          <Button variant='light' onClick={() => openModal(item)}>
+            More Info
+          </Button>
+          <Button variant='light' onClick={this.handleClick}>
+            <img
+              id='small'
+              className='img-fluid'
+              src={this.state.isFavorite ? blackHeart : emptyHeart}
+              alt={this.state.isFavorite ? 'Black Heart' : 'Empty Heart'}
+            />
+            {this.state.favoriteCounter} Favorites
+          </Button>
+        </Card.Body>
+      </Card>
     );
   }
 }
+
 export default HornedBeast;
-
-
-
-// task 1: Create state inside of the HornedBeast component that keeps track 
-//of the number of times each beast has been favorited.
-
-//task 2: Put a heart in each HornedBeast component 
-//with the number of “Favorites” next to it.
 
 
 // If isFavorite is true:
