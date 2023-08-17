@@ -41,9 +41,11 @@ Actual time needed to complete:
 ****************************************************************************************************************
 Number and name of feature: Display a Modal
 
-Estimate of time needed to complete: 1 hour
+Estimate of time needed to complete: 1 hour  
 
-Start time: 11:24
-Finish time:
+Start time: 11:24PM  
 
-Actual time needed to complete: 
+Finish time: 2:39 
+
+Actual time needed to complete:   
+15 hours 15 mins (sleep included)  
