@@ -14,6 +14,7 @@ class HornedBeast extends React.Component {
   }
 
   handleClick = () => {
+    //this.props.openModal(this.props.item); // maybe move to a seperate button click.
     this.setState((prevState) => ({
       isFavorite: !prevState.isFavorite,
       favoriteCounter: prevState.isFavorite ? prevState.favoriteCounter - 1 : prevState.favoriteCounter + 1,
@@ -21,11 +22,15 @@ class HornedBeast extends React.Component {
   };
 
   render() {
+    const {item, openModal} = this.props;
     return (
       <div>
-        <h2>{this.props.title}</h2>
+        <h2>{this.title}</h2>
         <img className='img-fluid' src={this.props.image_url} alt={this.props.keyword} title={this.props.title}></img>
         <p>{this.props.description}</p>
+        <Button variant='light' onClick={() => openModal(item)}>
+          More Info
+        </Button>
         <Button variant="light" onClick={this.handleClick}>
           <img id="small" className='img-fluid' src={this.state.isFavorite ? blackHeart : emptyHeart} alt={this.state.isFavorite ? "Black Heart" : "Empty Heart"} />
           {this.state.favoriteCounter} Favorites
