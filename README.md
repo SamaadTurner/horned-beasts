@@ -1,6 +1,6 @@
 # time it took:  
 
-Number and name of feature: Feature #1: Display Images  
+## Number and name of feature: Feature #1: Display Images  
 
 Estimate of time needed to complete: 30 mins  
 
@@ -13,7 +13,7 @@ Actual time needed to complete:
 
 
 
-Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
+## Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
 
 Estimate of time needed to complete: 1 hour
 
@@ -27,7 +27,7 @@ Actual time needed to complete:
 
 
 
-Number and name of feature: Feature #2: Bootstrap
+## Number and name of feature: Feature #3: Bootstrap
 
 Estimate of time needed to complete: 1 hour
 
@@ -39,13 +39,13 @@ Actual time needed to complete:
 23mins
 
 ****************************************************************************************************************
-Number and name of feature: Display a Modal
+## Number and name of feature: Feature #4 Display a Modal
 
 Estimate of time needed to complete: 1 hour  
 
 Start time: 11:24PM  
 
-Finish time: 2:39 
+Finish time: 2:39pm (next day)
 
 Actual time needed to complete:   
 15 hours 15 mins (sleep included)  
