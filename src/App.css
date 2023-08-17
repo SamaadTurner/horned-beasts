@@ -49,3 +49,7 @@
   max-width: 150px;
 
 }
+.modal_image{
+  max-height: 350px;
+  max-width: 350px;
+}
