@@ -21,6 +21,7 @@ class HornedBeast extends React.Component {
   };
 
   render() {
+    // deconstruction
     const { item, openModal } = this.props;
 
     return (
